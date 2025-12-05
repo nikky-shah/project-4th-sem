@@ -1,0 +1,65 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Background image */
+.background {
+  background-image: url('images/bookshelf1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e7d32; /* ✅ Green header */
+  padding: 16px 32px;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ✅ Style only the Sign Up link */
+.nav-links li:last-child a {
+  background-color: pink;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Hover effect for all links */
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

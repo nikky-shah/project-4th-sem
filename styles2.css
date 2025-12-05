@@ -1,0 +1,133 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Background image */
+.background {
+  background-image: url('images/bookshelf.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* Header styles */
+.top-bar {
+  background-color: #2e7d32;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-icon, .bell-icon, .message-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Side options list */
+.side-options {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.side-options ul {
+  list-style: none;
+}
+
+.side-options li {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Login dialog styles */
+.login-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid #2e7d32;
+  border-radius: 12px;
+  padding: 24px;
+  width: 320px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.login-dialog h2 {
+  margin-bottom: 16px;
+  color: #2e7d32;
+}
+
+.login-dialog label {
+  display: block;
+  margin-top: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-dialog input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-dialog button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-dialog button:hover {
+  background-color: #1b5e20;
+}
